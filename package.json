@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "e2e": "start-server-and-test dev http://localhost:3000 \"cypress open --e2e\"",
+    "e2e:headless": "start-server-and-test dev http://localhost:3000 \"cypress run --e2e\"",
+    "component": "cypress open --component",
+    "component:headless": "cypress run --component",
+    "start-server": "npm start",
+    "cy:run": "cypress run",
+    "cy:ci": "start-server-and-test start-server http://localhost:3000 cy:run"
   },
   "dependencies": {
     "@types/node": "18.15.0",
@@ -18,5 +26,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.5"
+  },
+  "devDependencies": {
+    "start-server-and-test": "^2.0.0"
   }
 }
