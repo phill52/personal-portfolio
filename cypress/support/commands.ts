@@ -1,3 +1,6 @@
+//@ts-ignore
+// eslint-disable-next-line
+export {};
 /// <reference types="cypress" />
 // ***********************************************
 // This example commands.ts shows you how to
